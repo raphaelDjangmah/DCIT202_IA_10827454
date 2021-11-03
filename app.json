@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "DCIT_202_IA",
-    "slug": "DCIT_202_IA",
+    "name": "LapShop",
+    "slug": "LapShop",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
