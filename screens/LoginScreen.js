@@ -59,7 +59,7 @@ const LoginScreen = props => {
     </View>
     </ImageBackground>
   );
-}
+} 
 
 const styles = StyleSheet.create({
   container: {
