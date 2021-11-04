@@ -25,7 +25,7 @@ const SignupScreen = props =>  {
         ]}
         blurRadius={2}
         >
-    
+     
         <View style={styles.container}>
           <Text style={styles.create_account}>Create An Account</Text>
     
