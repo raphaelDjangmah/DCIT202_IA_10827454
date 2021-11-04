@@ -1,4 +1,5 @@
 import { Dimensions } from "react-native";
+import { color } from "react-native-reanimated";
 const { width, height } = Dimensions.get("window");
 
 export const COLORS = {
@@ -21,6 +22,15 @@ export const COLORS = {
     lightGray4: "#F8F8F9",
     transparent: "transparent",
     darkgray: '#898C95',
+
+    col1 : '#040406',
+    col2 : '#FD9743',
+    col3 : '#58585A',
+    col4 : '#522F19',
+    col5 : '#AA5F28',
+    col6 : '#62462C',
+    col7 : '#BIAF9A',
+    col8 : '#E9A73E'
 };
 
 export const SIZES = {
@@ -98,6 +108,37 @@ export const BUTTONS = {
         borderColor: COLORS.gold,
         borderWidth: 2.5,
 
+    },
+
+    loginBut:{
+        height: HEIGHT.sm,
+        marginVertical: SIZES.padding,
+        borderRadius: SIZES.radius,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: COLORS.gold,
+        borderColor:COLORS.primary,
+        borderWidth: 2.5,
+    },
+
+    prim1: {
+        backgroundColor: COLORS.col3,
+        borderRadius: SIZES.radius,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderWidth: 2.5,
+        borderColor: COLORS.col3
+    },
+
+    prim2: {
+        height: HEIGHT.sm,
+        marginVertical: SIZES.padding,
+        borderRadius: SIZES.radius,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: COLORS.col6,
+        borderColor:COLORS.secondary,
+        borderWidth: 2,
     }
 }
 
