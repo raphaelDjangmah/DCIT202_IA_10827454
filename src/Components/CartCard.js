@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, FlatList, Pressable } from 'react-native';
-import images from '../../assets/images/images';
-import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../constants/theme';
+import images from '../../resources/assets/imageLocator';
+
+import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../resources/assets/theme';
 
 function CartCard({ item, navigation }) {
 

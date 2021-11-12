@@ -6,7 +6,7 @@ export const GenderContext = createContext()
 export const BrandsContext = createContext()
 export const AuthContext = createContext()
 function Context({ children }) {
-
+ 
 
     const [genders, setGenders] = useState([])
     const [brands, setbrands] = useState(null)

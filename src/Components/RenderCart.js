@@ -1,10 +1,12 @@
 import React, { useCallback } from 'react'
 import { StyleSheet, Image, Text, View, TouchableOpacity } from 'react-native';
-import { results } from '../../constants/dummyData';
-import { COLORS, HEIGHT, SIZES, WIDTH } from '../../constants/theme';
+import { results } from '../../resources/assets/dummyData';
+
 import CartCard from './CartCard';
 import { SwipeListView } from 'react-native-swipe-list-view';
-import { ICONS } from '../../assets/icon';
+
+import { ICONS } from '../../resources/assets/icon';
+import { COLORS, HEIGHT, SIZES, WIDTH } from '../../resources/assets/theme';
 
 function RenderCart({ navigation }) {
 

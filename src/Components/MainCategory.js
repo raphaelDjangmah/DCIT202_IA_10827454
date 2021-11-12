@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, FlatList } from 'react-native';
-import { COLORS, FONTS, SIZES } from '../../constants/theme';
+import { COLORS, FONTS, SIZES} from '../../resources/assets/theme';
+
+const [category, setCategory] = useState([])
+
 
 function MainCategory() {
-
-    const [category, setCategory] = useState("EXPLORE")
-
     const genders = [
-        "EXPLORE",
+        "EXPLORE", 
         "MEN",
         "WOMEN",
         "YOUTH",
