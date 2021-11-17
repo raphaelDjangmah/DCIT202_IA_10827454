@@ -83,13 +83,9 @@ function WelcomePage({ navigation }) {
          color: 'gray'
      },
      shopText: {
-        ...BUTTONS.prim1,
-        width: "100%",
-        borderRadius: 14,
-        height: 50,
-        alignItems: "center",
-        justifyContent: "center",
-        padding: 10
+        fontWeight: 'bold',
+        color: '#fff',
+        fontSize : 20
      },
      btnwarning: {
          ...BUTTONS.prim1,
