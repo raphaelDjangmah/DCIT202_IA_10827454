@@ -1,11 +1,9 @@
 import React from 'react'
 import { StyleSheet, Text, Image, View, TouchableOpacity, ImageBackground } from 'react-native';
-
-import images from '../../resources/assets/imageLocator';
-import { results } from '../../resources/assets/dummyData';
-
-import { ICONS } from '../../resources/assets/icon';
-import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../resources/assets/theme';
+import { ICONS } from '../../assets/icon';
+import images from '../../assets/images/images';
+import { results } from '../../constants/dummyData';
+import { COLORS, FONTS, SIZES, WIDTH } from '../../constants/theme';
 
 function CategoryCard({ item, index, navigation }) {
 
@@ -21,7 +19,7 @@ function CategoryCard({ item, index, navigation }) {
                     // top: -20,
                 }
             ]}
-            onPress={() => navigation.navigate('Sneaker', {
+            onPress={() => navigation.navigate('LapShop', {
                 item: item
             })}
         >

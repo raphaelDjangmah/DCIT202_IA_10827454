@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, FlatList, Pressable } from 'react-native';
-import images from '../../resources/assets/imageLocator';
-
-import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../resources/assets/theme';
+import images from '../../assets/images/images';
+import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../constants/theme';
 
 function CartCard({ item, navigation }) {
 
@@ -11,7 +10,7 @@ function CartCard({ item, navigation }) {
     return (
         <Pressable
             style={styles.container}
-            onPress={() => navigation.navigate('Sneaker', {
+            onPress={() => navigation.navigate('LapShop', {
                 item: item
             })}
         >
@@ -28,7 +27,7 @@ function CartCard({ item, navigation }) {
                         {item.name}
                     </Text>
                     <Text style={styles.category}>
-                        {`${item.gender} Shoe`}
+                        {`${item.model} Sho`}
                     </Text>
                 </View>
                 <View style={styles.priceContainer}>
