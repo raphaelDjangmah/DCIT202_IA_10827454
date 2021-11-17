@@ -10,7 +10,7 @@ function WelcomePage({ navigation }) {
 
      return (<ImageBackground
          source={require('../assets/home_bg.jpg')}
-         resizeMode="fill"
+         resizeMode="contain"
          style={[
              StyleSheet.absoluteFillObject,
              { width, height },
@@ -27,7 +27,7 @@ function WelcomePage({ navigation }) {
                      Your Home Of Quality Laptops
                  </Text>
              </View>
- `       `
+
              <View style={styles.homeImg}>
                  <Image style={styles.homeImg} source={require('../assets/laptop4.jpg.png')}/>
              </View> 
@@ -53,7 +53,6 @@ function WelcomePage({ navigation }) {
          position: 'absolute',
          padding: SIZES.padding * 2,
          justifyContent: 'space-around',
-         backgroundColor: 'cream',
          width: '100%',
          height: '100%',
  
@@ -84,10 +83,13 @@ function WelcomePage({ navigation }) {
          color: 'gray'
      },
      shopText: {
-         fontWeight: 'bold',
-         color: '#fff',
-         fontSize : 20
- 
+        ...BUTTONS.prim1,
+        width: "100%",
+        borderRadius: 14,
+        height: 50,
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 10
      },
      btnwarning: {
          ...BUTTONS.prim1,

@@ -28,7 +28,7 @@ function Authentication({ route }) {
     return (
         <ImageBackground
             source={images.signupImage}
-            resizeMode="fill"
+            resizeMode="contain"
             style={[
                 StyleSheet.absoluteFillObject,
                 { width, height },
@@ -147,7 +147,6 @@ const styles = StyleSheet.create({
     already_have_account: {
       height: 30,
       marginTop: 40,
-      fontStyle : 'underline',
       fontWeight: '600',
       fontSize : SIZES.h6
     },

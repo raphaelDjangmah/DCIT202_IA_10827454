@@ -29,7 +29,6 @@ export const COLORS = {
     col4 : '#522F19',
     col5 : '#AA5F28',
     col6 : '#62462C',
-    col7 : '#BIAF9A',
     col8 : '#E9A73E'
 };
 
