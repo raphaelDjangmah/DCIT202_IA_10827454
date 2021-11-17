@@ -16,7 +16,7 @@ function ExploreCard({ item, navigation }) {
             })}
         >
             <ImageBackground
-                source={{ uri: item.image.original }}
+                source={{uri: item.image.original}}
                 resizeMode="contain"
                 style={styles.imageContainer}
             >

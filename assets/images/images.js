@@ -1,25 +1,26 @@
 import welcomeBg from '../home_bg.jpg'
 import signupBg from '../white_bg_2.jpg'
 
-import mac1 from '../LAPTOPS/Apple/mac1.jpg'
-import mac2 from '../LAPTOPS/Apple/mac3.jpg'
-import mac3 from '../LAPTOPS/Apple/mac4.jpg.png'
+import mac1 from '../LAPTOPS/FoldB/mac1.jpg'
+import mac2 from '../LAPTOPS/FoldB/mac3.jpg'
+import mac3 from '../LAPTOPS/FoldB/mac4.jpg.png'
 
-import hp1 from '../LAPTOPS/Apple/hp1.jpg'
-import hp2 from '../LAPTOPS/Apple/hp2.jpg'
-import hp3 from '../LAPTOPS/Apple/hp3.png'
+import hp1 from '../LAPTOPS/FoldB/hp1.jpg'
+import hp2 from '../LAPTOPS/FoldB/hp2.jpg'
+import hp3 from '../LAPTOPS/FoldB/hp3.png'
 
-import dell1 from '../LAPTOPS/Apple/dell1.jpg'
-import dell2 from '../LAPTOPS/Apple/dell2.jpg'
-import dell3 from '../LAPTOPS/Apple/dell3.jpg'
+import dell1 from '../LAPTOPS/FoldB/dell1.jpg'
+import dell2 from '../LAPTOPS/FoldB/dell2.jpg'
+import dell3 from '../LAPTOPS/FoldB/dell3.jpg'
 
-import samsung1 from '../LAPTOPS/Apple/sumsung1.jpg'
-import samsung2 from '../LAPTOPS/Apple/samsung2.jpg'
-import samsung3 from '../LAPTOPS/Apple/samsung3.jpg'
+import samsung1 from '../LAPTOPS/FoldB/sumsung1.jpg'
+import samsung2 from '../LAPTOPS/FoldB/samsung2.jpg'
+import samsung3 from '../LAPTOPS/FoldB/samsung3.jpg'
 
-import acer1 from '../LAPTOPS/Apple/acer1.jpg'
-import acer2 from '../LAPTOPS/Apple/acer2.jpg'
-import acer3 from '../LAPTOPS/Apple/acer3.jpg'
+import acer1 from '../LAPTOPS/FoldB/acer1.jpg'
+import acer2 from '../LAPTOPS/FoldB/acer2.jpg'
+import acer3 from '../LAPTOPS/FoldB/acer3.jpg'
+
 
 
 

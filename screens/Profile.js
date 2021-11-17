@@ -15,7 +15,7 @@ function Profile() {
             <View style={styles.profile}>
                 <Image 
                     source={images.dell2}
-                    resizeMode="fill"
+                    resizeMode="contain"
                     style={styles.profilePic}></Image>
                 <View>
                     <Text style={styles.displayName} >

@@ -9,12 +9,7 @@ function CategoryPage({ navigation }) {
     const [category, setCategory] = useState("EXPLORE")
 
     const item = [
-        "EXPLORE",
-        "iPhone 13",
-        "iPhone 12",
-        "iPhone 11",
-        "iPhone X",
-        "iPhone SE"
+            "CURRENTLY IN STOCK"
     ]
 
     const renderItem = useCallback(
