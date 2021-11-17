@@ -1,15 +1,14 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity, ImageBackground } from 'react-native';
-import images from '../../resources/assets/imageLocator';
-
-import { ICONS } from '../../resources/assets/icon';
-import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../resources/assets/theme';
+import { ICONS } from '../../assets/icon';
+import images from '../../assets/images/images';
+import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../constants/theme';
 
 function FavouriteCard({ item, navigation }) {
     return (
         <TouchableOpacity 
             style={styles.container}
-            onPress={() => navigation.navigate('Sneaker',{
+            onPress={() => navigation.navigate('LapShop',{
                 item: item
             }) }
             >

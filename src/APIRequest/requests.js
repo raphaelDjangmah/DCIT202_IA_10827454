@@ -3,7 +3,7 @@ export const API_KEY = '355e91af9emshffc53c11c2485dfp150c6bjsn3ee269f8648c'
 
 const options = {
     method: 'GET',
-    url: 'https://v1-sneakers.p.rapidapi.com/v1/genders',
+    url: 'https://v1-LapShops.p.rapidapi.com/v1/genders',
     headers: {
         'x-rapidapi-key': API_KEY,
         'x-rapidapi-host': 'v1-sneakers.p.rapidapi.com'

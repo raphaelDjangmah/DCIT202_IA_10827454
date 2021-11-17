@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
-import { results } from '../../resources/assets/dummyData';
-import { FONTS, SIZES } from '../../resources/assets/theme';
+import { results } from '../../constants/dummyData'
+import { FONTS, SIZES } from '../../constants/theme';
 import LatestCard from './LatestCard';
 
 function RenderLatest({ navigation }) {

@@ -1,21 +1,13 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, FlatList } from 'react-native';
-import { COLORS, FONTS, SIZES} from '../../resources/assets/theme';
-
-const [category, setCategory] = useState([])
-
+import { COLORS, FONTS, SIZES } from '../../constants/theme';
 
 function MainCategory() {
-    const genders = [
-        "EXPLORE", 
-        "MEN",
-        "WOMEN",
-        "YOUTH",
-        "CHILD",
-        "INFANT",
-        "PRESCHOOL",
-        "TODDLER",
-        "UNISEX",
+
+    const [category, setCategory] = useState("EXPLORE")
+
+    const deviceType = [
+        "CURRENTLY IN STOCK"
     ]
 
     const renderItem = (item) => (
@@ -25,9 +17,9 @@ function MainCategory() {
             >
             <Text style={[
                 styles.categoryText,
-                { color: category === item ? COLORS.black : COLORS.darkgray }
+                { color: category === item ? COLORS.black : COLORS.col4 }
             ]} >
-                {`${item} Shoes `}
+                {`${item}`}
             </Text>
         </TouchableOpacity>
     )
@@ -35,13 +27,13 @@ function MainCategory() {
     return (
         <View style={styles.container} >
             <Text style={styles.textMain} >
-                Athletic Shoes
+                DreemWare 
             </Text>
-            <Text style={styles.textMain}>
-                Collection
+            <Text style={styles.categoryText}>
+                Your Home Of Quality Laptops
             </Text>
             <FlatList
-                data={genders}
+                data={deviceType}
                 horizontal
                 showsHorizontalScrollIndicator={false}
                 keyExtractor={ (item, index) => 'key' + index }
@@ -60,12 +52,14 @@ const styles = StyleSheet.create({
         // backgroundColor: COLORS.primary 
     },
     textMain: {
-        ...FONTS.h1,
+        ...FONTS.h2,
         fontWeight: 'bold',
-        color: COLORS.black
+        color: COLORS.black,
+        marginTop: 20
     },
     category: {
-        marginRight: SIZES.padding
+        marginRight: SIZES.padding,
+        marginBottom: 5
     },
     categoryText: {
         ...FONTS.h5,

@@ -1,8 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
-
-import { ICONS } from '../../resources/assets/icon';
-import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../resources/assets/theme';
+import { ICONS } from '../../assets/icon'
+import { SIZES } from '../../constants/theme';
 // import images from '../../assets/images/images';
 // import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../constants/theme';
 

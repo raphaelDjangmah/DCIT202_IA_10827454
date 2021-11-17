@@ -1,11 +1,9 @@
 import React, { useCallback } from 'react'
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import { results } from '../../resources/assets/dummyData';
+import { results } from '../../constants/dummyData';
+import { SIZES } from '../../constants/theme';
 import CategoryCard from './CategoryCard';
-
-import { ICONS } from '../../resources/assets/icon';
-import { SIZES} from '../../resources/assets/theme';
-
+import FavouriteCard from './FavouriteCard';
 
 function RenderCategory({ navigation }) {
 

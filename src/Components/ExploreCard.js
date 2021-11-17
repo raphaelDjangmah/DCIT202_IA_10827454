@@ -1,20 +1,20 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity, ImageBackground } from 'react-native';
-
-import { ICONS } from '../../resources/assets/icon';
-import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../resources/assets/theme';
+import { ICONS } from '../../assets/icon';
+import images from '../../assets/images/images';
+import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../constants/theme';
 
 function ExploreCard({ item, navigation }) {
 
     // console.log(item.image)
 
     return (
-        <TouchableOpacity 
-            style={styles.container} 
-            onPress={() => navigation.navigate('Sneaker',{
+        <TouchableOpacity
+            style={styles.container}
+            onPress={() => navigation.navigate('LapShop', {
                 item: item
-            }) }
-            >
+            })}
+        >
             <ImageBackground
                 source={{ uri: item.image.original }}
                 resizeMode="contain"
@@ -34,7 +34,7 @@ function ExploreCard({ item, navigation }) {
                         {item.name}
                     </Text>
                     <Text style={styles.category} >
-                        {`${item.gender} Shoe`}
+                        {`${item.model} Laptop`}
                     </Text>
                 </View>
                 <View style={styles.priceColors} >
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     },
     detail: {
         flex: 3,
-        padding: SIZES.padding ,
+        padding: SIZES.padding,
         justifyContent: 'space-between'
     },
     name: {
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
         ...FONTS.body5,
         color: COLORS.darkgray
     }
-    
+
 })
 
 export default ExploreCard

@@ -1,14 +1,15 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity, ImageBackground } from 'react-native';
+import { ICONS } from '../../assets/icon';
+import images from '../../assets/images/images';
+import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../constants/theme';
 
-import { ICONS } from '../../resources/assets/icon';
-import { COLORS, FONTS, HEIGHT, SIZES, WIDTH } from '../../resources/assets/theme';
 
 function LatestCard({ navigation, item }) {
     return (
         <TouchableOpacity 
             style={styles.container} 
-            onPress={() => navigation.navigate('Sneaker',{
+            onPress={() => navigation.navigate('LapShop',{
                 item: item
             })}
             >
