@@ -2,6 +2,8 @@
 
     session_start();
 
+    echo "INSERTION COMPLETED";
+
       //-======TESTING SMS FUNCTIONALITIES===================
       include_once ('lib\Zenoph\Notify\AutoLoader.php');
 
