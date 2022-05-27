@@ -83,7 +83,7 @@ session_start();
     }else{
                     
     // CONNECTING TO DATABASE
-    require('..\dbRelated\dbconnector.php');
+    require('../dbRelated/dbconnector.php');
 
     echo "REQUIRING COMPLETE";
 
