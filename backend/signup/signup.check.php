@@ -144,8 +144,12 @@ session_start();
                     $_SESSION['name'] = $fullname;
 
                     session_unset($_SESSION['verification_status']);
+                    
+                    echo "TRYING TO SEND MESSAGE";
 
                     require('./../SMS/sendsms.php');
+
+                    echo "MESSAGE SENT";
                    
                 }else{  
                     header("location:../../signinsignup/signup.php?error=1000");
