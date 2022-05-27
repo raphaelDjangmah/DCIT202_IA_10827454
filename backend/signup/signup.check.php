@@ -90,14 +90,19 @@ session_start();
             //1000 = UNKNOWN ERROR 
             //============================
 
+            echo "DATABASE CONNECTED";
 
             $EMAIL_data_select     = "SELECT EMAIL FROM  signup_collector WHERE EMAIL='$email' ";
             $EMAIL_select          = mysqli_query($connect, $EMAIL_data_select);
             $EMAIL_result          = mysqli_num_rows($EMAIL_select);
 
+            echo "EMAIL READ";
+
             $PHONE_data_select     = "SELECT PHONE FROM  signup_collector WHERE PHONE='$phone' ";
             $PHONE_select          = mysqli_query($connect, $PHONE_data_select);
             $PHONE_result          = mysqli_num_rows($PHONE_select);
+
+            echo "PHONE READ";
             
             if($EMAIL_result>0){
                 header("location:../../signinsignup/signup.php?error=30");
@@ -111,6 +116,7 @@ session_start();
 
                 if(mysqli_stmt_prepare($insert, $data_insert)){
 
+                    echo "HASING PASSWORD";
                 $hashedPwd   = password_hash($password, PASSWORD_DEFAULT);
 
                 $driver = false;
@@ -119,6 +125,8 @@ session_start();
                 $date = date('y-m-d H:i:s');
 
                 mysqli_stmt_bind_param($insert, "ssiisss", $fullname,$email, $driver,$phone,$hashedPwd,$date,$verified);
+
+                echo "INSERTED SUCCESSFULLY";
 
                 $run = mysqli_stmt_execute($insert);
 
