@@ -4,6 +4,8 @@
 
       //-======TESTING SMS FUNCTIONALITIES===================
       include_once ('lib\Zenoph\Notify\AutoLoader.php');
+
+      echo "INCLUDE DONE";
         
       use Zenoph\Notify\Enums\AuthModel;
       use Zenoph\Notify\Enums\TextMessageType;
