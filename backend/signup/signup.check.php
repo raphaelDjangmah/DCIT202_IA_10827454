@@ -83,10 +83,9 @@ session_start();
     }else{
                     
     // CONNECTING TO DATABASE
-    require('..\dbrelated\dbconnector.php');
+    require('..\dbRelated\dbconnector.php');
 
         if ($connect){
-
 
             //============ERROR MESSAGES ===========
             //30 = PHONE NUMBER ALREADY EXISTS
