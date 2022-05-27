@@ -85,6 +85,8 @@ session_start();
     // CONNECTING TO DATABASE
     require('..\dbRelated\dbconnector.php');
 
+    echo "REQUIRING COMPLETE";
+
         if ($connect){
 
             //============ERROR MESSAGES ===========
