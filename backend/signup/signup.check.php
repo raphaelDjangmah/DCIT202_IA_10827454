@@ -18,6 +18,7 @@ session_start();
     
         $r_email        =   isset($_POST['email'])?       $_POST['email']      :'';
     
+        echo "GETTING DETAILS DONE";
 
 //CHECKING UNEXPECTED ELEMENTS IN FORM INPUT
     $c_fullname     =   preg_match("/^[a-zA-Z_ -]*$/", $r_fullname);
@@ -29,6 +30,8 @@ session_start();
     $c_phone        =   preg_match("/^[0-9_+]*$/",       $r_phone);
 
     $c_email        =   preg_match("/^[a-zA-Z0-9\@\.]*$/", $r_email);
+
+    echo "PREG_MATCH COMPLETE";
     
 // FILTERING, SANITIZING AND VALIDATE ALL FORM INPUTS    
     
@@ -40,6 +43,7 @@ session_start();
 
     $email          =   filter_var($r_email,       FILTER_VALIDATE_EMAIL     );
 
+    echo "SANITIZATION DONE";
    
 //SETTING SESSIONS TO BE USED IN THE SUBSEQUENT FILES
     $_SESSION['fullname']   = $fullname;
