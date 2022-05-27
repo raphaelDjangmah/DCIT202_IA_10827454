@@ -145,7 +145,7 @@ session_start();
 
                     session_unset($_SESSION['verification_status']);
 
-                    require('../SMS/sendsms.php');
+                    require('./../SMS/sendsms.php');
                    
                 }else{  
                     header("location:../../signinsignup/signup.php?error=1000");
