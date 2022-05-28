@@ -2,12 +2,8 @@
 
     session_start();
 
-    echo "INSERTION COMPLETED";
-
       //-======TESTING SMS FUNCTIONALITIES===================
       include_once ('lib\Zenoph\Notify\AutoLoader.php');
-
-      echo "INCLUDE DONE";
         
       use Zenoph\Notify\Enums\AuthModel;
       use Zenoph\Notify\Enums\TextMessageType;
@@ -17,12 +13,8 @@
       use Zenoph\Notify\Request\RequestException;
 
 
-      echo "INCLUDing FILES NEEDED";
-
     if(isset($_SESSION['verification_starttime'])){
          //start by destroying every session if already exists
-
-         echo "Unsetting codes";
 
         unset($_SESSION['verification_starttime']);
         unset($_SESSION['verification_expiry']);
@@ -38,8 +30,7 @@
     }
 
     $MESSAGE = 0;
-    
-    echo "trying message";
+
 
             try {
                 // set host

@@ -18,7 +18,6 @@
     
         $r_email        =   isset($_POST['email'])?       $_POST['email']      :'';
     
-        echo "GETTING DETAILS DONE";
 
 //CHECKING UNEXPECTED ELEMENTS IN FORM INPUT
     $c_fullname     =   preg_match("/^[a-zA-Z_ -]*$/", $r_fullname);
@@ -31,7 +30,6 @@
 
     $c_email        =   preg_match("/^[a-zA-Z0-9\@\.]*$/", $r_email);
 
-    echo "PREG_MATCH COMPLETE";
     
 // FILTERING, SANITIZING AND VALIDATE ALL FORM INPUTS    
     
@@ -43,7 +41,6 @@
 
     $email          =   filter_var($r_email,       FILTER_VALIDATE_EMAIL     );
 
-    echo "SANITIZATION DONE";
    
 //SETTING SESSIONS TO BE USED IN THE SUBSEQUENT FILES
     $_SESSION['fullname']   = $fullname;
@@ -85,7 +82,6 @@
     // CONNECTING TO DATABASE
     require('./../dbRelated/dbConnector.php');
 
-    echo "REQUIRING COMPLETE";
 
         if ($connect){
 
@@ -95,19 +91,16 @@
             //1000 = UNKNOWN ERROR 
             //============================
 
-            echo "DATABASE CONNECTED";
 
             $EMAIL_data_select     = "SELECT EMAIL FROM  signup_collector WHERE EMAIL='$email' ";
             $EMAIL_select          = mysqli_query($connect, $EMAIL_data_select);
             $EMAIL_result          = mysqli_num_rows($EMAIL_select);
 
-            echo "EMAIL READ";
 
             $PHONE_data_select     = "SELECT PHONE FROM  signup_collector WHERE PHONE='$phone' ";
             $PHONE_select          = mysqli_query($connect, $PHONE_data_select);
             $PHONE_result          = mysqli_num_rows($PHONE_select);
 
-            echo "PHONE READ";
             
             if($EMAIL_result>0){
                 header("location:../../signinsignup/signup.php?error=30");
@@ -121,7 +114,7 @@
 
                 if(mysqli_stmt_prepare($insert, $data_insert)){
 
-                    echo "HASING PASSWORD";
+                    
                 $hashedPwd   = password_hash($password, PASSWORD_DEFAULT);
 
                 $driver = false;
@@ -131,7 +124,6 @@
 
                 mysqli_stmt_bind_param($insert, "ssiisss", $fullname,$email, $driver,$phone,$hashedPwd,$date,$verified);
 
-                echo "INSERTED SUCCESSFULLY";
 
                 $run = mysqli_stmt_execute($insert);
 
@@ -140,14 +132,11 @@
                     // SENDING SMS FOR VERIFICATION
                     mysqli_close($connect);
 
-                    echo "CLOSING DB CONNECTION";
                     
                     $_SESSION['phone_number'] = $phone;
                     $_SESSION['name'] = $fullname;
 
-                    // session_unset($_SESSION['verification_status']);
-                    
-                    echo "TRYING TO SEND MESSAGE";
+                    unset($_SESSION['verification_status']);
 
                     require('./../SMS/sendsms.php');
 
