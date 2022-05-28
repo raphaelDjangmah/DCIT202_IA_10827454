@@ -138,8 +138,9 @@ session_start();
                 if($run){
                 
                     // SENDING SMS FOR VERIFICATION
-                    echo "CLOSING DB CONNECTION";
                     mysqli_close($connect);
+
+                    echo "CLOSING DB CONNECTION";
                     
                     $_SESSION['phone_number'] = $phone;
                     $_SESSION['name'] = $fullname;
