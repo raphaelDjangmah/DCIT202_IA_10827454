@@ -1,7 +1,7 @@
 
 <?php 
 
-session_start();
+    session_start();
 
     if(!isset($_POST['submit'])){
         header("location:../../signinsignup/signup.php?error=unauthorized entry");
@@ -145,7 +145,7 @@ session_start();
                     $_SESSION['phone_number'] = $phone;
                     $_SESSION['name'] = $fullname;
 
-                    session_unset($_SESSION['verification_status']);
+                    // session_unset($_SESSION['verification_status']);
                     
                     echo "TRYING TO SEND MESSAGE";
 
