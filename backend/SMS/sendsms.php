@@ -31,10 +31,13 @@
 
     $MESSAGE = 0;
 
+        echo "MESSAGE TRYING";
 
             try {
                 // set host
                 NotifyRequest::setHost("api.smsonlinegh.com");
+
+                echo "NOTIFY REQUEST";
 
                 // Initialise request object
                 $sr = new SMSRequest();
