@@ -23,7 +23,7 @@
          //start by destroying every session if already exists
 
          echo "Unsetting codes";
-         
+
         unset($_SESSION['verification_starttime']);
         unset($_SESSION['verification_expiry']);
         unset($_SESSION['verification_code']);
@@ -64,6 +64,8 @@
                 $sr->setMessage($message);
                 $sr->setMessageType(TextMessageType::TEXT);
                 $sr->setSender("QuickPick");     // should be registered
+
+                echo "Owning chips";
 
                 // destinations in an array or maybe database rows. Just an example
                 $numbersArr = array($phone);
