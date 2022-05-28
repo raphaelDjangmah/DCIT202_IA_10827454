@@ -17,8 +17,13 @@
       use Zenoph\Notify\Request\RequestException;
 
 
+      echo "INCLUDing FILES NEEDED";
+
     if(isset($_SESSION['verification_starttime'])){
          //start by destroying every session if already exists
+
+         echo "Unsetting codes";
+         
         unset($_SESSION['verification_starttime']);
         unset($_SESSION['verification_expiry']);
         unset($_SESSION['verification_code']);
