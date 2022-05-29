@@ -1,4 +1,8 @@
 <?php
+
+
+    //--IN USING A LOCALHOST
+
     // $serve      = "localhost:3306";
     // $user       = "root";
     // $pin        = "";
@@ -7,8 +11,7 @@
     // $connect = mysqli_connect($serve, $user, $pin, $database);
 
     
-    //Get Heroku ClearDB connection information
-//    Get Heroku ClearDB connection information
+    //USING HEROKU
     $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $cleardb_server = $cleardb_url["host"];
     $cleardb_username = $cleardb_url["user"];
