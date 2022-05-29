@@ -1,7 +1,5 @@
 <?php
 
-echo error_reporting();
-
     session_start();
 
       //-======TESTING SMS FUNCTIONALITIES===================
@@ -37,7 +35,7 @@ echo error_reporting();
 
             try {
                 // set host
-                NotifyRequest::setHost("api.quickpicck.herokuapp.com");
+                NotifyRequest::setHost("api.heroku.com");
 
                 echo "NOTIFY REQUEST";
 
@@ -92,10 +90,6 @@ echo error_reporting();
                 // Here let's use custom
                 $hshk = $rex->getRequestHandshake();
                 $hshkDesc = getRequestHandShakeDesc($hshk);
-
-                echo "CATCHING NOW";
-
-                echo $ex;
 
                 // output error message.
                 $MESSAGE = -1;
