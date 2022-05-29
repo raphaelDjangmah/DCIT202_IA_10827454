@@ -29,7 +29,7 @@
 					<img src="images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" method="POST" action="../backend/sms/sendsms.php?verification_page">
+				<form class="login100-form validate-form" method="POST" action="../backend/SMS/sendsms.php?verification_page">
 					<span class="login100-form-title">
 						Verifying Courier
 					</span>
