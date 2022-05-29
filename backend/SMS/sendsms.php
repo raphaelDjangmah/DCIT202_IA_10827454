@@ -3,14 +3,14 @@
     session_start();
 
       //-======TESTING SMS FUNCTIONALITIES===================
-      include_once ('lib\Zenoph\Notify\AutoLoader.php');
+      include_once ('lib/Zenoph/Notify/AutoLoader.php');
         
-      use Zenoph\Notify\Enums\AuthModel;
-      use Zenoph\Notify\Enums\TextMessageType;
-      use Zenoph\Notify\Enums\RequestHandshake;
-      use Zenoph\Notify\Request\NotifyRequest;
-      use Zenoph\Notify\Request\SMSRequest;
-      use Zenoph\Notify\Request\RequestException;
+      use Zenoph/Notify/Enums/AuthModel;
+      use Zenoph/Notify/Enums/TextMessageType;
+      use Zenoph/Notify/Enums/RequestHandshake;
+      use Zenoph/Notify/Request/NotifyRequest;
+      use Zenoph/Notify/Request/SMSRequest;
+      use Zenoph/Notify/Request/RequestException;
 
 
     if(isset($_SESSION['verification_starttime'])){
