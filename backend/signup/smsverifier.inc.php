@@ -16,8 +16,6 @@ if(!isset($_POST['submit'])){
    $c_code        =   preg_match("/^[0-9]*$/",       $r_code);
    $code          =   filter_var($r_code ,      FILTER_SANITIZE_NUMBER_INT);
 
-   echo "<script>alert($code)</script>";
-
    if(!$c_code){
       //-- if the input contains illegal characters
       header("location:../../signinsignup/smsverification.php?error=10");
@@ -35,7 +33,7 @@ if(!isset($_POST['submit'])){
          }else{
             //--IF THE KEY IS CORRECT
                         //now connect to the database and update the verification status
-                  require('..\dbrelated\dbconnector.php');
+               require('./../dbRelated/dbConnector.php');
 
                   if ($connect){
 
@@ -70,6 +68,9 @@ if(!isset($_POST['submit'])){
                      if($run){
                            // SENDING SMS FOR VERIFICATION
                            header("location: ../../signinsignup/homepage.php");
+
+
+
                            mysqli_close($connect);
                      }else{  
                         header("location:../../signinsignup/smsverification.php?error=10");

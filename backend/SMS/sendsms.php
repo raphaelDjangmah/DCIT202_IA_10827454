@@ -31,13 +31,9 @@
 
     $MESSAGE = 0;
 
-        echo "MESSAGE TRYING";
-
             try {
                 // set host
                 NotifyRequest::setHost('api.smsonlinegh.com');
-
-                echo "NOTIFY REQUEST";
 
                 // Initialise request object
                 $sr = new SMSRequest();
@@ -46,13 +42,10 @@
                 $sr->setAuthModel(AuthModel::API_KEY);
                 $sr->setAuthApiKey("5faece05c73a4f3a0ec0b2c281cb38f495a8583b958856e31f0e5acc987e4538");
 
-                echo "Encrypting password";
-
                 // message properties
                 $sixDigitRandomNumber = rand(100000,999999);
                 $message = "Your Verification code is $sixDigitRandomNumber. Expire in 1 minute";    
 
-                echo "Sessioning";
 
                 $_SESSION['verification_starttime'] = time(); // Taking now logged in time.
                 // Ending a session in 1 minutes from the starting time.
@@ -60,12 +53,10 @@
                 $_SESSION['verification_code']  = $sixDigitRandomNumber;
                     
 
-                echo "Trying sending message";
                 $sr->setMessage($message);
                 $sr->setMessageType(TextMessageType::TEXT);
                 $sr->setSender("QuickPick");     // should be registered
 
-                echo "Message ssent";
 
                 // destinations in an array or maybe database rows. Just an example
                 $numbersArr = array($phone);

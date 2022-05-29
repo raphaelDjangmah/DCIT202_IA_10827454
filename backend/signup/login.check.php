@@ -7,7 +7,7 @@ if(!isset($_POST['submit'])){
     exit();
   }else{
 
-    session_unset($_SESSION['verification_status']);
+    unset($_SESSION['verification_status']);
  
     $r_phone        =   isset($_POST['phone'])?    $_POST['phone']   :''; 
     $r_password     =   isset($_POST['password'])?    $_POST['password']   :'';
@@ -37,7 +37,7 @@ if(!isset($_POST['submit'])){
     }else{
 
     
-        require('..\dbrelated\dbconnector.php');
+        require('./../dbRelated/dbConnector.php');
 
         if(!$connect){
             header("location:../../signinsignup/login.php?error=999");

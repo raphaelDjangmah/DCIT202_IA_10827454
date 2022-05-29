@@ -79,7 +79,7 @@ session_start();
     }else{
                     
     // CONNECTING TO DATABASE
-    require('..\dbrelated\dbconnector.php');
+    require('./../dbRelated/dbConnector.php');
 
         if ($connect){
 
@@ -129,6 +129,7 @@ session_start();
                     $_SESSION['name'] = $fullname;
 
                     mysqli_close($connect);
+
                     header("location:../../signinsignup/verifyCourier.php?message=success");
                     
                    
