@@ -58,7 +58,7 @@
 					</p>
 
 					<div style="justify-content:center;">
-						<i class="fa fa-mobile-phone" style="font-size:10rem; color:skyblue"></i>h
+						<i class="fa fa-mobile-phone" style="font-size:10rem; color:skyblue"></i>
 					</div>
 				</form>
 
