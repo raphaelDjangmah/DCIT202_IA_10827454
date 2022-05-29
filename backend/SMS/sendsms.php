@@ -93,6 +93,10 @@
                 $hshk = $rex->getRequestHandshake();
                 $hshkDesc = getRequestHandShakeDesc($hshk);
 
+                echo "CATCHING NOW";
+
+                echo $ex;
+
                 // output error message.
                 $MESSAGE = -1;
 
