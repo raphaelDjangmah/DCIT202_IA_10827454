@@ -37,7 +37,7 @@
 
             try {
                 // set host
-             //   NotifyRequest::setHost("api.smsonlinegh.com");
+                NotifyRequest::setHost("api.quickpicck.herokuapp.com");
 
                 echo "NOTIFY REQUEST";
 
