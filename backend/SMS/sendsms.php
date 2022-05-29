@@ -1,5 +1,7 @@
 <?php
 
+    error_reporting(E_ALL);
+
     session_start();
 
       //-======TESTING SMS FUNCTIONALITIES===================
@@ -35,7 +37,7 @@
 
             try {
                 // set host
-                NotifyRequest::setHost("api.smsonlinegh.com");
+             //   NotifyRequest::setHost("api.smsonlinegh.com");
 
                 echo "NOTIFY REQUEST";
 
