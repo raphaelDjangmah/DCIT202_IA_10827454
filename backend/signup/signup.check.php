@@ -140,8 +140,6 @@
 
                     require('./../SMS/sendsms.php');
 
-                    echo "MESSAGE SENT";
-                   
                 }else{  
                     header("location:../../signinsignup/signup.php?error=1000");
                 }
